@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="div">
+        <h4>TODO APP:</h4>
+        <input type="text" id="inputvalue">
+        <button onclick="addItem()">ADD</button>
+
+        <button onclick="deleteItem()">DELETE ALL</button>
+        <button id="update" style="visibility:hidden">UPDATE</button>
+        <ul id="todoitem"></ul>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6qE2d6cWqUVju9Uefz-iX7GQzOG6vD-E",
+    authDomain: "todo-app-35064.firebaseapp.com",
+    databaseURL: "https://todo-app-35064.firebaseio.com",
+    projectId: "todo-app-35064",
+    storageBucket: "todo-app-35064.appspot.com",
+    messagingSenderId: "556193571245",
+    appId: "1:556193571245:web:1fe67c09d774352e798124"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src="practics.js"></script>
+</body>
+
+</html>
